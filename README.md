@@ -31,7 +31,7 @@ To provide a local MCP server that can be used by a client like Claude Desktop, 
                 "$YOURPATH/llamacloud-mcp",
                 "run",
                 "python",
-				"$YOURPATH/llamacloud-mcp/mcp-server.py"
+                "$YOURPATH/llamacloud-mcp/mcp-server.py"
             ]
         }
     }
