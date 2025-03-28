@@ -11,6 +11,7 @@ llama-index-llms-openai = "^0.3.28"
 llama-index-indices-managed-llama-cloud = "^0.6.9"
 mcp = "^1.6.0"
 python-dotenv = "^1.1.0"
+llama-index-tools-mcp = "^0.1.0"
 
 
 [build-system]
