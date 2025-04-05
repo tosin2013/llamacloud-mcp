@@ -333,4 +333,4 @@ For more detailed information, refer to our ADRs:
 - [ADR-0004: Cross-Platform Build and Validation Strategy](../docs/adrs/0004-build-and-validation.md)
 - [ADR-0005: Custom MCP Server Development](../docs/adrs/0005-mcp-server-prompt-engineering.md)
 
-Remember to check our [GitHub repository](https://github.com/yourusername/llamacloud-mcp) for the latest updates and examples. 
+Remember to check our [GitHub repository](https://github.com/tosin2013/llamacloud-mcp) for the latest updates and examples. 
