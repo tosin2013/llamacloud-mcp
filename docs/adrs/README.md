@@ -24,6 +24,18 @@ This directory contains Architecture Decision Records (ADRs) for the LlamaCloud 
   - Protocol selection and configuration
   - Client communication patterns
 
+### Build and Deployment
+- [[ADR-0004] Cross-Platform Build and Validation Strategy](0004-build-and-validation.md)
+  - Build scripts for multiple platforms
+  - Validation framework
+  - Environment setup and configuration
+
+### Development Workflow
+- [[ADR-0005] MCP Server Prompt Engineering Strategy](0005-mcp-server-prompt-engineering.md)
+  - Prompt templates for server creation
+  - End-to-end implementation examples
+  - Validation and testing approach
+
 ### Templates
 - [[ADR-0000] ADR Template](0000-adr-template.md)
   - Standard template for creating new ADRs
@@ -69,22 +81,22 @@ sequenceDiagram
     MS-->>CD: Return Result
 ```
 
-### Transport Protocol Selection
+### Development Process Flow
 
 ```mermaid
 graph LR
-    subgraph Local Integration
-        CD[Claude Desktop] -->|stdio| MS1[MCP Server<br/>stdio mode]
+    subgraph Development
+        PR[Prompts] -->|Generate| SP[Server Specification]
+        SP -->|Implement| MC[MCP Server]
+        MC -->|Validate| TS[Test Suite]
+        TS -->|Deploy| DP[Deployment]
     end
     
-    subgraph Network Integration
-        PC[Programmatic Client] -->|HTTP/SSE| MS2[MCP Server<br/>HTTP mode]
-    end
-    
-    style CD fill:#f9f,stroke:#333
-    style PC fill:#bbf,stroke:#333
-    style MS1 fill:#bfb,stroke:#333
-    style MS2 fill:#bfb,stroke:#333
+    style PR fill:#f9f,stroke:#333
+    style SP fill:#bbf,stroke:#333
+    style MC fill:#bfb,stroke:#333
+    style TS fill:#fbb,stroke:#333
+    style DP fill:#bff,stroke:#333
 ```
 
 ## Status Legend

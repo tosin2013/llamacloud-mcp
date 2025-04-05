@@ -2,6 +2,53 @@
 
 This repo demonstrates both how to create an MCP server using LlamaCloud and how to use LlamaIndex as an MCP client.
 
+## Architecture
+
+This project follows a well-documented architecture with detailed Architectural Decision Records (ADRs). Here's a high-level overview of the system:
+
+For a comprehensive guide on building your own custom MCP server, check out our [detailed blog post](docs/blog.md).
+
+```mermaid
+graph TB
+    subgraph Client Layer
+        CD[Claude Desktop]
+        LA[LlamaIndex Agent]
+    end
+    
+    subgraph MCP Layer
+        MS[MCP Server]
+        MC[MCP Client]
+    end
+    
+    subgraph Backend Services
+        LC[LlamaCloud]
+        OAI[OpenAI]
+    end
+    
+    CD -->|stdio| MS
+    LA -->|HTTP/SSE| MC
+    MC -->|tools| MS
+    MS -->|query| LC
+    MS -->|LLM| OAI
+    
+    style CD fill:#f9f,stroke:#333
+    style LA fill:#f9f,stroke:#333
+    style MS fill:#bfb,stroke:#333
+    style MC fill:#bfb,stroke:#333
+    style LC fill:#bbf,stroke:#333
+    style OAI fill:#bbf,stroke:#333
+```
+
+### Architectural Decision Records (ADRs)
+
+The following ADRs document key architectural decisions:
+
+1. [ADR-0001: Using LlamaCloud as an MCP Server](docs/adrs/0001-llamacloud-mcp-server.md)
+2. [ADR-0002: MCP Client Implementation](docs/adrs/0002-mcp-client-implementation.md)
+3. [ADR-0003: Transport Protocol Selection](docs/adrs/0003-transport-protocol.md)
+4. [ADR-0004: Cross-Platform Build and Validation Strategy](docs/adrs/0004-build-and-validation.md)
+5. [ADR-0005: Custom MCP Server Development](docs/adrs/0005-custom-mcp-server.md)
+
 ## LlamaCloud as an MCP server
 
 To provide a local MCP server that can be used by a client like Claude Desktop, you can use `mcp-server.py`. You can use this to provide a tool that will use RAG to provide Claude with up-to-the-second private information that it can use to answer questions. You can provide as many of these tools as you want.
