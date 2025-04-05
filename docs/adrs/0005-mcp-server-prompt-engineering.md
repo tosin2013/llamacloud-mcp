@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-Creating custom MCP servers requires a structured approach to:
+Creating custom Model Context Protocol (MCP) servers requires a structured approach to:
 - Define the server's purpose and capabilities
 - Design appropriate tools and their interfaces
 - Implement proper error handling and validation

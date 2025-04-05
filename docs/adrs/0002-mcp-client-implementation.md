@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-The project needs a way to consume MCP services and integrate them with LLM-powered agents. Requirements include:
+The project needs a way to consume Model Context Protocol (MCP) services and integrate them with LLM-powered agents. Requirements include:
 - Ability to connect to MCP servers
 - Integration with LlamaIndex's agent framework
 - Support for asynchronous operations

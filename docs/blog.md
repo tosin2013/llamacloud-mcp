@@ -2,7 +2,11 @@
 
 ## Introduction
 
-Machine Callable Programs (MCPs) are revolutionizing how we build AI-powered applications by providing a standardized way for AI models to interact with tools and services. In this guide, we'll walk through the process of building your own custom MCP server, using our architectural decisions and real-world examples as a foundation.
+Model Context Protocol (MCP) is an open standard introduced by Anthropic that enables AI systems (like large language models) to connect and interact with external tools, data sources, and services. In essence, an MCP server acts as a connector or adapter that provides AI "agents" with access to resources (databases, APIs, filesystems, etc.) through a standardized interface.
+
+This standardization means AI models no longer remain isolated with only their training data — they can fetch live information or perform actions by communicating with MCP servers in a common language. MCP servers thus play a critical role in modern computing by bridging AI and the real world, allowing AI to safely retrieve up-to-date data and execute tasks in external systems on behalf of users.
+
+Early adopters of MCP included enterprises like Block (Square) and developer tool companies such as Zed, Replit, Codeium, and Sourcegraph, with a vibrant community building hundreds of MCP connectors for various services. In this guide, we'll walk through the process of building your own custom MCP server, using our architectural decisions and real-world examples as a foundation.
 
 ## Table of Contents
 

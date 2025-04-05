@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-The project requires a way to provide AI-powered tools to Claude Desktop and other clients that can consume Machine Callable Programs (MCPs). The system needs to:
+The project requires a way to provide AI-powered tools to Claude Desktop and other clients that can consume Model Context Protocol (MCP) services. The system needs to:
 - Provide real-time access to private documentation and data
 - Support RAG (Retrieval Augmented Generation) capabilities
 - Be easily extensible with new tools

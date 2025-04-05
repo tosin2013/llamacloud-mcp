@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory contains Architecture Decision Records (ADRs) for the LlamaCloud MCP project. Each ADR documents a significant architectural decision, including the context, consequences, and rationale behind the decision.
+This directory contains Architecture Decision Records (ADRs) for the LlamaCloud Model Context Protocol (MCP) project. Each ADR documents a significant architectural decision, including the context, consequences, and rationale behind the decision.
 
 ## Categories
 

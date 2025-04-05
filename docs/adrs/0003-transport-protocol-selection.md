@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-The project needs to support communication between MCP servers and various clients, including Claude Desktop and programmatic clients. The transport protocol needs to:
+The project needs to support communication between Model Context Protocol (MCP) servers and various clients, including Claude Desktop and programmatic clients. The transport protocol needs to:
 - Support real-time communication
 - Work with different client types
 - Handle streaming responses
