@@ -327,10 +327,10 @@ async def safe_generate_code(request: CodeGenRequest) -> Dict[str, Any]:
 Building a custom MCP server opens up powerful possibilities for AI-powered development tools. By following this guide and our architectural decisions, you can create robust, scalable, and secure MCP servers that enhance your development workflow.
 
 For more detailed information, refer to our ADRs:
-- [ADR-0001: Using LlamaCloud as an MCP Server](docs/adrs/0001-llamacloud-mcp-server.md)
-- [ADR-0002: MCP Client Implementation](docs/adrs/0002-mcp-client-implementation.md)
-- [ADR-0003: Transport Protocol Selection](docs/adrs/0003-transport-protocol.md)
-- [ADR-0004: Cross-Platform Build and Validation Strategy](docs/adrs/0004-build-and-validation.md)
-- [ADR-0005: Custom MCP Server Development](docs/adrs/0005-custom-mcp-server.md)
+- [ADR-0001: Using LlamaCloud as an MCP Server](../docs/adrs/0001-llamacloud-mcp-server.md)
+- [ADR-0002: MCP Client Implementation](../docs/adrs/0002-mcp-client-implementation.md)
+- [ADR-0003: Transport Protocol Selection](../docs/adrs/0003-transport-protocol-selection.md)
+- [ADR-0004: Cross-Platform Build and Validation Strategy](../docs/adrs/0004-build-and-validation.md)
+- [ADR-0005: Custom MCP Server Development](../docs/adrs/0005-mcp-server-prompt-engineering.md)
 
 Remember to check our [GitHub repository](https://github.com/yourusername/llamacloud-mcp) for the latest updates and examples. 

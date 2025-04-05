@@ -43,11 +43,11 @@ graph TB
 
 The following ADRs document key architectural decisions:
 
-1. [ADR-0001: Using LlamaCloud as an MCP Server](docs/adrs/0001-llamacloud-mcp-server.md)
-2. [ADR-0002: MCP Client Implementation](docs/adrs/0002-mcp-client-implementation.md)
-3. [ADR-0003: Transport Protocol Selection](docs/adrs/0003-transport-protocol.md)
-4. [ADR-0004: Cross-Platform Build and Validation Strategy](docs/adrs/0004-build-and-validation.md)
-5. [ADR-0005: Custom MCP Server Development](docs/adrs/0005-custom-mcp-server.md)
+1. [ADR-0001: Using LlamaCloud as an MCP Server](./docs/adrs/0001-llamacloud-mcp-server.md)
+2. [ADR-0002: MCP Client Implementation](./docs/adrs/0002-mcp-client-implementation.md)
+3. [ADR-0003: Transport Protocol Selection](./docs/adrs/0003-transport-protocol-selection.md)
+4. [ADR-0004: Cross-Platform Build and Validation Strategy](./docs/adrs/0004-build-and-validation.md)
+5. [ADR-0005: Custom MCP Server Development](./docs/adrs/0005-mcp-server-prompt-engineering.md)
 
 ## LlamaCloud as an MCP server
 
